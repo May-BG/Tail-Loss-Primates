@@ -11,7 +11,7 @@ output includes TBXT_new_8species.fasta
 ```
 python mutation.py TBXT_new_8species.fasta   
 ```
-#### For 140 genes, run:  
+#### For 140 genes, after gathering fasta file for each gene, run:  
 ```
 bash forloop_python.sh
 ```
