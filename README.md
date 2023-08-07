@@ -16,7 +16,7 @@ python mutation.py TBXT_new_8species.fasta
 bash forloop_python.sh
 ```
 ### 02_classify_mutations
-The inputs are 140 csv files generated from step01. For each of the 140 genes, variants are classified into insertion, deletion and snp. Each type is stored in a bed file. 
+The inputs are 140 csv files generated from step01. For each of the 140 genes, variants are classified into insertion, deletion and snp. Each type of variant is stored in a bed file. 
 ```
 Rscript mutation_classifier.R
 ```
@@ -26,4 +26,8 @@ cat 02_classify_mutations/*_snp.bed > total_snp.bed
 cat 02_classify_mutations/*_deletion.bed > total_del.bed  
 cat 02_classify_mutations/*_insertion.bed > total_ins.bed
 ```
+Outputs are saved in  03_predict_via_vep.
 ### 04_filter_vep_results
+```
+Rscript filter_vep_visualization.R
+```
