@@ -9,7 +9,9 @@ The inputs are 140 csv files generated from step01. For each of the 140 genes, v
 
 ### 03_predict_via_vep
 cat 02_classify_mutations/*_snp.bed > total_snp.bed
+
 cat 02_classify_mutations/*_deletion.bed > total_del.bed
+
 cat 02_classify_mutations/*_insertion.bed > total_ins.bed
 
 ### 04_filter_vep_results
